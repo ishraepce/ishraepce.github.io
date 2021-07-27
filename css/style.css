@@ -1,0 +1,600 @@
+/*---------------------------------------------------------- Global Styles ------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oxanium", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.sec1 {
+  width: 99vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 122, 191, 0.28) 0%,
+    rgba(142, 233, 156, 0) 100%
+  );
+  position: absolute;
+  z-index: -2;
+  overflow: hidden;
+}
+.circle {
+  top: 0em;
+  left: 0em;
+  position: absolute;
+  z-index: -1;
+}
+.snowflake {
+  top: 70em;
+  left: 0em;
+  position: absolute;
+  z-index: -1;
+}
+
+.gear {
+  top: 10em;
+  left: 80vw;
+  position: absolute;
+  z-index: -1;
+}
+
+/* --------------------------------------------- Nav bar ------------------------------------------  */
+
+.main-head {
+  margin-left: 5em;
+  margin-top: 0%;
+  margin-right: 3%;
+}
+
+.logo1 {
+  margin-right: 5%;
+}
+
+.logo2 {
+  margin-left: 5%;
+}
+
+nav {
+  display: flex;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  margin-right: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+/* -------------------------------------------- nav bar animation -------------------------------- */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #0077bd;
+  border-bottom: 2px solid #0077bd;
+  font-size: 30px;
+}
+/* -------------------------------------------------------- section 1 ------------------------------- */
+
+.sec2 {
+  height: 90vh;
+  text-align: center;
+  width: 100vw;
+  align-items: center;
+}
+.logo {
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+.sec2 h2 {
+  width: 100vw;
+  margin-top: 3rem;
+
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sec2 button {
+  width: 15vw;
+  color: white;
+  background: #0077bd;
+  padding: 1em 3em;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  margin-left: 3rem;
+  transition: 0.2s;
+}
+.sec2 button a {
+  color: white;
+}
+.sec2 button:hover {
+  transform: scale(1.1);
+}
+
+.sec3 {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+.wave img {
+  top: 134vh;
+  left: 0vw;
+  z-index: -1;
+  width: 100vw;
+  position: absolute;
+}
+.head {
+  margin-left: 3rem;
+}
+
+/* ----------------------- -----------------  slider     ------------------------- */
+
+.slider {
+  margin-top: 5%;
+  max-width: 100%;
+  display: flex;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 10%;
+  background: #66ccff;
+  border-radius: 100px 0px;
+}
+.slider .card .img {
+  height: 300px;
+  width: 100%;
+}
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100px 0px;
+}
+.slider .card .content {
+  padding: 10% 20%;
+}
+.card .content .title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #66ccff;
+  line-height: 20px;
+}
+.card .content p {
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn {
+  display: block;
+  text-align: left;
+  margin-top: 5%;
+}
+.card .content .btn button {
+  background: #ccffcc;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5% 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 20%;
+}
+.card .content .btn button:hover {
+  transform: scale(0.9);
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* ---------------------------------section 3------------------------------------- */
+
+.sec4 {
+  height: 100vh;
+  width: 100vw;
+
+  text-align: center;
+  background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+}
+
+.sec4 .head {
+  padding-top: 2em;
+  color: white;
+}
+
+.box {
+  width: 50em;
+  height: 50em;
+  background: #376a88;
+  border: none;
+  border-radius: 25px;
+  padding: 3em;
+
+  margin-left: 7em;
+}
+.box h2 {
+  color: white;
+}
+.box p {
+  color: white;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+  margin-top: 5em;
+  margin-left: 30em;
+}
+
+.box ul {
+  color: white;
+  font-size: 2rem;
+}
+
+.box2 {
+  text-align: left;
+  margin-left: 25vh;
+}
+.box2 h2 {
+  margin-bottom: 1em;
+}
+/* ----------------------------------------- footer ------------------------- */
+
+footer {
+  color: black;
+  background: transparent;
+  margin-top: 10vh;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 100vw;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h3 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 30rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  margin-left: 50vh;
+}
+
+.www {
+  margin-left: 5vh;
+}
+
+/* -------------------------------------------------------Media Qyerrry _____________________________________ */
+@media screen and (max-width: 1366px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .sec1 {
+    width: 100vw;
+  }
+  .sec2 {
+    overflow: hidden;
+  }
+  .logo {
+    margin-left: 3em;
+  }
+
+  .sec2 h2 {
+    margin-left: 2em;
+  }
+
+  .sec2 button {
+    margin-left: 3em;
+  }
+
+  .wave img {
+    top: 0;
+    left: 0vw;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  footer h3 {
+    flex: 1 1 30rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div ul li {
+    margin-left: 00.5em;
+  }
+  .head {
+    padding-top: 1em;
+    margin-left: 1.5em;
+  }
+
+  .box {
+    width: 50em;
+    height: 50em;
+    background: #376a88;
+    border: none;
+    border-radius: 25px;
+    padding: 3em;
+    margin-left: 0vh;
+  }
+  .box h2 {
+    color: white;
+  }
+  .box p {
+    color: white;
+    margin-top: 1em;
+    text-align: justify;
+    font-size: 2.5rem;
+  }
+
+  .flex {
+    display: flex;
+    margin-top: 5em;
+    margin-left: 0em;
+  }
+
+  .box ul {
+    color: white;
+    font-size: 2rem;
+  }
+  .box1 {
+    margin-left: 16em;
+  }
+  .box2 {
+    text-align: left;
+    margin-left: 5em;
+  }
+  .box2 h2 {
+    margin-bottom: 1em;
+  }
+  /* .gear {
+    top: 10%;
+    left: 75%;
+    position: absolute;
+    z-index: -1;
+  } */
+
+  .sec4 {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+  }
+
+  .sec4 .head {
+    margin-top: 2vh;
+    color: white;
+  }
+}
+
+/* ---------------------------------------------- media 1800 ---------------------------------- */
+
+@media screen and (max-width: 1800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .sec1 {
+    width: 100vw;
+  }
+  .sec2 {
+    overflow: hidden;
+  }
+  .logo {
+    margin-left: 3em;
+  }
+
+  .sec2 h2 {
+    margin-left: 2em;
+  }
+
+  .sec2 button {
+    margin-left: 3em;
+  }
+
+  .wave img {
+    top: 131.5vh;
+    left: 0vw;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  footer h3 {
+    flex: 1 1 30rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div ul li {
+    margin-left: 00.5em;
+  }
+  .head {
+    margin-top: 1em;
+    margin-left: 1.5em;
+  }
+
+  .box {
+    width: 50em;
+    height: 50em;
+    background: #376a88;
+    border: none;
+    border-radius: 25px;
+    padding: 3em;
+    margin-left: 0vh;
+  }
+  .box h2 {
+    color: white;
+  }
+  .box p {
+    color: white;
+    margin-top: 1em;
+    text-align: justify;
+    font-size: 2.5rem;
+  }
+
+  .flex {
+    display: flex;
+    margin-top: 5em;
+    margin-left: 0em;
+  }
+
+  .box ul {
+    color: white;
+    font-size: 2rem;
+  }
+  .box1 {
+    margin-left: 30em;
+  }
+  .box2 {
+    text-align: left;
+    margin-left: 5em;
+  }
+  .box2 h2 {
+    margin-bottom: 1em;
+  }
+  /* .gear {
+    top: 10%;
+    left: 75%;
+    position: absolute;
+    z-index: -1;
+  } */
+
+  .sec4 {
+    height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+    background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+  }
+
+  .sec4 .head {
+    margin-top: 2vh;
+    color: white;
+  }
+}

@@ -1,0 +1,561 @@
+/*---------------------------------------------------------- Global Styles ------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oxanium", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.sec1 {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 122, 191, 0.28) 0%,
+    rgba(142, 233, 156, 0) 100%
+  );
+  position: absolute;
+  z-index: -2;
+  overflow: hidden;
+}
+.circle {
+  height: 18rem;
+  width: 18rem;
+  top: 0em;
+  left: 0em;
+  position: absolute;
+  z-index: -1;
+}
+.snowflake {
+  height: 40rem;
+  width: 25rem;
+  top: 90vh;
+  left: 0em;
+  position: absolute;
+  z-index: -1;
+}
+
+.gear {
+  height: 45rem;
+  width: 30rem;
+  top: 10em;
+  left: 82vw;
+  position: absolute;
+  z-index: -1;
+}
+
+/* --------------------------------------------- Nav bar ------------------------------------------  */
+
+.main-head {
+  margin-left: 5em;
+  margin-top: 0%;
+  margin-right: 3%;
+}
+
+.logo1 {
+  margin-right: 5%;
+}
+
+.logo2 {
+  margin-left: 5%;
+}
+
+nav {
+  display: flex;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  margin-right: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+/* -------------------------------------------- nav bar animation -------------------------------- */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #0077bd;
+  border-bottom: 2px solid #0077bd;
+  font-size: 30px;
+}
+/* -------------------------------------------------------- section 1 ------------------------------- */
+
+/* ----------------------------------------- footer ------------------------- */
+
+footer {
+  color: black;
+  background: transparent;
+  margin-top: 0vh;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 100vw;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h3 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 30rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  margin-left: 50vh;
+}
+
+.www {
+  margin-left: 5vh;
+}
+
+/* -------------------------------------------------------Media Qyerrry _____________________________________ */
+@media screen and (max-width: 1366px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .sec1 {
+    width: 100vw;
+  }
+  .sec2 {
+    overflow: hidden;
+  }
+  .logo {
+    margin-left: 3em;
+  }
+
+  .sec2 h2 {
+    margin-left: 2em;
+  }
+
+  .sec2 button {
+    margin-left: 3em;
+  }
+
+  .wave img {
+    top: 0;
+    left: 0vw;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  footer h3 {
+    flex: 1 1 30rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div ul li {
+    margin-left: 00.5em;
+  }
+  .head {
+    padding-top: 1em;
+    margin-left: 1.5em;
+  }
+
+  .box {
+    width: 50em;
+    height: 50em;
+    background: #376a88;
+    border: none;
+    border-radius: 25px;
+    padding: 3em;
+    margin-left: 0vh;
+  }
+  .box h2 {
+    color: white;
+  }
+  .box p {
+    color: white;
+    margin-top: 1em;
+    text-align: justify;
+    font-size: 2.5rem;
+  }
+
+  .flex {
+    display: flex;
+    margin-top: 5em;
+    margin-left: 0em;
+  }
+
+  .box ul {
+    color: white;
+    font-size: 2rem;
+  }
+  .box1 {
+    margin-left: 16em;
+  }
+  .box2 {
+    text-align: left;
+    margin-left: 5em;
+  }
+  .box2 h2 {
+    margin-bottom: 1em;
+  }
+  /* .gear {
+      top: 10%;
+      left: 75%;
+      position: absolute;
+      z-index: -1;
+    } */
+
+  .sec4 {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+  }
+
+  .sec4 .head {
+    margin-top: 2vh;
+    color: white;
+  }
+}
+
+/* ---------------------------------------------- media 1800 ---------------------------------- */
+
+@media screen and (max-width: 1800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .sec1 {
+    width: 100vw;
+  }
+  .sec2 {
+    overflow: hidden;
+  }
+  .logo {
+    margin-left: 3em;
+  }
+
+  .sec2 h2 {
+    margin-left: 2em;
+  }
+
+  .sec2 button {
+    margin-left: 3em;
+  }
+
+  .wave img {
+    top: 131.5vh;
+    left: 0vw;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  footer h3 {
+    flex: 1 1 30rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div ul li {
+    margin-left: 00.5em;
+  }
+  .head {
+    margin-top: 1em;
+    margin-left: 1.5em;
+  }
+
+  .box {
+    width: 50em;
+    height: 50em;
+    background: #376a88;
+    border: none;
+    border-radius: 25px;
+    padding: 3em;
+    margin-left: 0vh;
+  }
+  .box h2 {
+    color: white;
+  }
+  .box p {
+    color: white;
+    margin-top: 1em;
+    text-align: justify;
+    font-size: 2.5rem;
+  }
+
+  .flex {
+    display: flex;
+    margin-top: 5em;
+    margin-left: 0em;
+  }
+
+  .box ul {
+    color: white;
+    font-size: 2rem;
+  }
+  .box1 {
+    margin-left: 30em;
+  }
+  .box2 {
+    text-align: left;
+    margin-left: 5em;
+  }
+  .box2 h2 {
+    margin-bottom: 1em;
+  }
+  /* .gear {
+      top: 10%;
+      left: 75%;
+      position: absolute;
+      z-index: -1;
+    } */
+
+  .sec4 {
+    height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+    background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+  }
+
+  .sec4 .head {
+    margin-top: 2vh;
+    color: white;
+  }
+}
+
+/* sectns of about.......... */
+
+.frm h1 {
+  padding-top: 2rem;
+  margin-left: 20vw;
+  margin-bottom: 4rem;
+  font-size: 40px;
+}
+.frm {
+  width: 100vw;
+  height: 100vh;
+
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+*/
+}
+
+.infoimg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-width: 1rem;
+  border-radius: 2.3rem;
+  height: 50rem;
+  width: 110rem;
+  font-family: sans-serif;
+
+  background-color: #66ccff;
+  display: flex;
+  margin-left: 20vw;
+  margin-right: 10rem;
+  /* margin-bottom: 10rem; */
+  margin-top: 0rem;
+}
+.infoimg .info {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  /*
+    padding-left: 2rem;padding-right: 2rem;*/
+  height: 40rem;
+  width: 60rem;
+  font-size: 25rem;
+  text-align: justify;
+  color: white;
+  border-width: 1rem;
+  border-radius: 5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #057abf;
+}
+
+.info2 {
+  padding-top: 5.5rem;
+  padding-bottom: 3rem;
+  /* padding-right: 2rem;
+    padding-left: 2rem;*/
+  height: 40rem;
+  width: 60rem;
+  font-size: 25rem;
+  text-align: justify;
+  color: white;
+  border-width: 1rem;
+  border-radius: 5rem;
+  margin-left: 4rem;
+  margin-right: 4.5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #057abf;
+}
+.info3 {
+  /* padding-right: 2rem;
+    padding-left: 2rem;*/
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  height: 40rem;
+  width: 60rem;
+  font-size: 25rem;
+  text-align: justify;
+  color: white;
+  border-width: 1rem;
+  border-radius: 5rem;
+  margin-left: 4.5rem;
+  margin-right: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #057abf;
+}
+.info,
+.info2,
+.info3 {
+  padding-right: 4.2rem;
+  padding-left: 4.2rem;
+}
+.infoimg .img {
+  height: 30rem;
+  width: 40rem;
+  border-width: 1rem;
+  border-radius: 3rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 5rem;
+  margin-top: 10.5rem;
+  background-color: #057abf;
+}
+.lappi {
+  border-width: 1rem;
+  border-radius: 3rem;
+  height: 30rem;
+  width: 40rem;
+}
+.latt {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 117.5vh;
+  z-index: -1;
+  position: absolute;
+}
+.lastcolor {
+  width: 100vw;
+  background: linear-gradient(180deg, #057abf 0%, rgba(70, 224, 159, 0) 100%);
+}
+
+.our {
+  color: white;
+}
